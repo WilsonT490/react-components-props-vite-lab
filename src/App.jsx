@@ -1,15 +1,15 @@
-import React from "react";
-import blogData from "../data/blog";
-
-import Header from "./Header";
-import BlogList from "./BlogList";
-import Footer from "./Footer";
+import "./index.css";
+import Header from "./components/Header";
+import BlogList from "./components/BlogList";
+import Footer from "./components/Footer";
+import blogData from "./data/blog";
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Header title="My Personal Blog" />
-      <BlogList posts={blogData} />
+      <main><BlogList posts={blogData} />
+      </main>
       <Footer />
     </div>
   );

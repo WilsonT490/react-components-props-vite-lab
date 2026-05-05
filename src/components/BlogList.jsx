@@ -2,8 +2,8 @@ import BlogPost from "./BlogPost";
 
 function BlogList({ posts }) {
   return (
-    <div>
-      {posts.map(post => (
+    <div className="blog-list">
+      {posts.map((post) => (
         <BlogPost key={post.id} post={post} />
       ))}
     </div>
