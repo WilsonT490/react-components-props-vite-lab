@@ -7,8 +7,9 @@ import blogData from "./data/blog";
 function App() {
   return (
     <div>
-      <Header title="My Personal Blog" />
-      <main><BlogList posts={blogData} />
+      <Header name="My Personal Blog" />
+      <main>
+        <BlogList posts={blogData} />
       </main>
       <Footer />
     </div>
